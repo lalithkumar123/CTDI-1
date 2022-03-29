@@ -1,0 +1,145 @@
+//day 1 solutions.
+1]
+i)
+#include<stdio.h>
+void main()
+{
+  int a=3,b=4,c=5,d;
+  d=a+b+c;
+  printf("%d",d);
+}
+
+ii)
+#include <stdio.h>
+
+void main()
+{
+  int a=6,b=3,c=5,d=6,e=6,f;
+  f=a+b+c+d+e;
+  printf("%d",f);
+}
+
+2)
+#include <stdio.h>
+#include<math.h>
+
+
+int main() 
+{
+int c,n;
+int i=1,k,d;
+int rev=0,rem=0;
+printf("enter your number:");
+scanf("%d",&n);
+printf("enter your digit: ");
+scanf("%d",&k);  
+  while(n>0)
+    {
+      rem=n%10;
+      rev=10*rev+rem;
+      n=n/10;
+      }
+  
+  
+  while(rev>0)
+  {
+    d=rev%10;
+    if(i==k)
+    {
+      printf("%d",d);
+    }
+    i++;
+    rev=rev/10;
+  }
+}
+
+4]
+#include <stdio.h>
+#include<math.h>
+
+void main()
+{
+ int n;
+ float a,b;
+ printf("enter your number: "); 
+ scanf("%d",&n);
+ a=sqrt(n);
+ b=(int)a;
+ if(a==b)
+ {
+  printf("yes");
+ }
+ else
+ {
+  printf("no");
+ }
+ 
+}
+
+
+
+
+5]
+i)
+#include<stdio.h>
+int main(void) 
+{
+ int a,i;
+ printf("enter your number: ");
+ scanf("%d", &a);
+ for (i = a; i >= 0; --i) 
+{
+ printf("%d\n", i);
+ }
+}
+
+ii)
+
+#include<stdio.h>
+int main(void) 
+{
+ int a,i;
+ printf("enter your number: ");
+ scanf("%d", &a);
+ for (i = a; i >= 0;i--) 
+{
+ printf("%d\n", i);
+ }
+}
+
+iii)
+
+#include <stdio.h>
+
+void main()
+{
+  int a,b;
+  printf("enter your number: ");
+  scanf("%d%d",&a,&b);
+  if(b<a)
+  {
+    b=b+a;
+    printf("%d",b);
+  }
+  else
+  {
+    b=b-a;
+    printf("%d",b);
+  }
+}
+
+iv)
+#include <stdio.h>
+
+int main()
+{
+  int a=5,b=2,c;
+  c=(a%b);
+  printf("%d",c);
+ }
+
+
+
+
+
+
