@@ -1,0 +1,32 @@
+
+1]
+
+#include <stdio.h>
+
+int main() 
+{
+int n,rem=0,rem_1,sum_1=0,sum=0;
+printf("enter your number: ");
+scanf("%d",&n);
+while(n>0)
+  {
+    rem=n%10;
+    sum=sum+rem;
+    n=n/10;
+  }
+while(sum>0)
+  {
+    rem_1=sum%10;
+    sum_1=sum_1+rem_1;
+    sum=sum/10;
+  }
+  if(sum_1==2||sum_1==3||sum_1==5||sum_1==7)
+  {
+    printf("prime");
+  }
+  else
+  {
+    printf("not a prime");
+  }
+
+  }
