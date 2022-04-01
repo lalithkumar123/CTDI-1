@@ -1,0 +1,26 @@
+3]
+#include <stdio.h>
+
+int main(void) {
+ int i,fact=1,rem,n;
+ printf("enter your number:");
+ scanf("%d",&n);
+   for(i=1;i<=n;i++)
+   {
+       fact=fact*i;
+   } 
+ // printf("%d",fact);
+  while(fact>0)
+   {
+       rem=fact%10;
+       if(rem==1||rem==2||rem==3||rem==4||rem==5||rem==6||rem==7||rem==8||rem==9)
+       {
+           printf("%d",rem);
+           break;
+         }
+       fact=fact/10;
+   }
+}
+
+
+
