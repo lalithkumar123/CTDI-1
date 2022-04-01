@@ -30,3 +30,35 @@ while(sum>0)
   }
 
   }
+  
+  
+  2]
+  
+  
+#include <stdio.h>
+
+int main(void) 
+{
+  int i,n,a,b,aa[25],k=0;
+  printf("enter your number: ");
+  scanf("%d",&n);
+  do
+    {
+      a=n%10;
+      b=n/10;
+      if(a==0)
+      {
+        aa[k]=5;
+          k++;
+      }
+      else{
+        aa[k]=a;
+        k++;
+      }
+      n=b;
+      }while(n>=1);
+    for(i=k-1;i>=0;i--)
+      {
+        printf("%d",aa[i]);      
+      }
+}
