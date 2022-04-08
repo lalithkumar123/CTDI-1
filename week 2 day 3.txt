@@ -1,0 +1,24 @@
+
+
+#include <stdio.h>
+
+int main(void)
+{
+int i,n,a[25],x;
+printf("enter your element: ");
+scanf("%d",&n);
+printf("enter your element one by one: ");
+for(i=0;i<n;i++)
+  {
+    scanf("%d",&a[i]);
+  }
+printf("enter element to find: ");
+scanf("%d",&x);
+for(i=0;i<n;i++)
+  {
+    if(a[i]==x)
+    {
+      printf("%d",i);
+    }
+  }
+}
