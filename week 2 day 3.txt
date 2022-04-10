@@ -1,5 +1,5 @@
 
-
+3]
 #include <stdio.h>
 
 int main(void)
@@ -21,4 +21,33 @@ for(i=0;i<n;i++)
       printf("%d",i);
     }
   }
+}
+
+
+4]
+#include <stdio.h>
+
+int main(void) {
+int k,i,sum=0,a[100000],n,c,count=0,v,mis=0;
+printf("enter your element: ");
+scanf("%d",&n);
+printf("enter your array no: ");
+for(i=0;i<n;i++)
+  {
+    scanf("%d",&a[i]);
+  }
+  k=a[n-1];
+  c=a[0];
+for(i=c;i<=k;i++)
+  {
+    sum=sum+i;
+   // count++;
+  }
+ // v=sum;
+for(i=0;i<=n;i++)
+  {
+    v=sum;
+    sum=v-a[i];
+  }
+  printf("the missing number is %d",sum);
 }
